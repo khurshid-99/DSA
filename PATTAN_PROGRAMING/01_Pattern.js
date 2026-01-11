@@ -98,4 +98,50 @@ function p8(params) {
     console.log();
   }
 }
-p8();
+// p8();
+
+function p9(params) {
+  const num = Number(prompt("Enter your number : "));
+  for (let i = 1; i <= num; i++) {
+    for (let j = 1; j <= num; j++) {
+      if (i == j || i + j == num + 1) {
+        process.stdout.write(`* `);
+      } else {
+        process.stdout.write("  ");
+      }
+    }
+    console.log("");
+  }
+}
+// p9();
+
+function p10(params) {
+  const num = Number(prompt("Enter your number : "));
+  for (let i = 1; i <= num; i++) {
+    for (let j = 1; j <= 2 * num - 1; j++) {
+      if (i == j || j == 2 * num - i) {
+        process.stdout.write("* ");
+      } else {
+        process.stdout.write(" ");
+      }
+    }
+    console.log("");
+  }
+}
+// p10();
+function p11(params) {
+  const num = Number(prompt("Enter your number : "));
+  for (let i = 1; i <= num; i++) {
+    process.stdout.write("* ")
+    for (let j = 1; j <= num; j++) {
+      if () {
+        process.stdout.write("* ");
+      } else {
+        process.stdout.write(" ");
+      }
+    }
+    console.log("");
+  }
+}
+p11();
+
